@@ -1,0 +1,15 @@
+<!--
+UCCD 3223 Mobile Applications Development
+June 2024 Trimester
+
+Chen Jin Shen	2202076
+Chin Whye Ting	2200559
+Ong Jing Yang	2200327
+Tan Zong Ting	2302731
+-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <solid android:color="@android:color/transparent" />
+    <stroke android:width="2px" android:color="#000000"/>
+    <corners android:radius="32dp" />
+</shape>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AddTimetable">
+
+    <!--
+UCCD 3223 Mobile Applications Development
+June 2024 Trimester
+
+Chen Jin Shen	2202076
+Chin Whye Ting	2200559
+Ong Jing Yang	2200327
+Tan Zong Ting	2302731
+-->
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="310dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/urbanist_semibold"
+        android:text="Add Subject"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle1"
+        android:layout_width="142dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/urbanist"
+        android:text="Enter your class information"
+        app:layout_constraintEnd_toEndOf="@+id/Title1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Title1"
+        app:layout_constraintTop_toBottomOf="@+id/Title1"/>
+
+    <EditText
+        android:id="@+id/courseid"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/urbanist"
+        android:hint="Course"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle1" />
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/urbanist"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/courseid"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/courseid"
+        app:layout_constraintTop_toBottomOf="@+id/courseid" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/daySpinner"
+        app:layout_constraintStart_toStartOf="@+id/daySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/daySpinner">
+
+        <TextView
+            android:id="@+id/StartTime"
+            android:layout_width="182.5dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:fontFamily="@font/urbanist"
+            android:gravity="center"
+            android:hint="Time Start"
+            android:onClick="showStartTimePicker"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/EndTime"
+            android:layout_width="182.5dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:fontFamily="@font/urbanist"
+            android:gravity="center"
+            android:hint="Time End"
+            android:onClick="showEndTimePicker"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Remarks"
+        android:layout_width="365dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border2"
+        android:ems="10"
+        android:fontFamily="@font/urbanist"
+        android:gravity="start"
+        android:hint="Remarks"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/urbanist"
+        android:text="Continue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Remarks"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Remarks"
+        app:layout_constraintTop_toBottomOf="@id/Remarks" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/allura"
+        android:text="UTM"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/Title1"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AddTimeTable</string>
+
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string name="about_us_description">\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0In today’s fast-paced, digitally driven world, effective time management is crucial for achieving success. Traditional paper-based timetables often fail to accommodate complex schedules, leaving both students and educators grappling with the challenge of balancing numerous responsibilities. Many existing timetable applications on platforms like the Google Play Store present usability issues, with steep learning curves and expensive subscription fees serving as significant barriers for users.
+        \n\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"Ur Time Management" (UTM) addresses these challenges by offering a user-friendly platform designed for seamless task scheduling and offline access to schedules. UTM not only helps users stay organized but also boosts productivity and discipline. Our app is tailored to meet the needs of both students and educators, enabling them to manage their time efficiently, reduce stress, and cultivate a more disciplined and productive lifestyle.
+        \n\n\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0We hope you find our app valuable and enjoyable to use.</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".setting">
+
+    <!--
+UCCD 3223 Mobile Applications Development
+June 2024 Trimester
+
+Chen Jin Shen	2202076
+Chin Whye Ting	2200559
+Ong Jing Yang	2200327
+Tan Zong Ting	2302731
+-->
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/urbanist_semibold"
+        android:textSize="55sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/allura"
+        android:text="UTM"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/usernameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/urbanist"
+        android:text="Add Class"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="122dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/urbanist"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_about"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_about"
+        app:layout_constraintTop_toBottomOf="@+id/btn_about"
+        app:strokeColor="#000000"
+        app:strokeWidth="2px" />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/urbanist"
+        android:text="Feedback"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_create"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="@+id/btn_create"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/urbanist"
+        android:text="About Us"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_feedback"
+        app:layout_constraintStart_toStartOf="@+id/btn_feedback"
+        app:layout_constraintTop_toBottomOf="@+id/btn_feedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

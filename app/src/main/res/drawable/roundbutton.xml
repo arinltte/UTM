@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<selector xmlns:android = "http://schemas.android.com/apk/res/android">
+
+    <!--
+UCCD 3223 Mobile Applications Development
+June 2024 Trimester
+
+Chen Jin Shen	2202076
+Chin Whye Ting	2200559
+Ong Jing Yang	2200327
+Tan Zong Ting	2302731
+-->
+
+    <item android:state_pressed = "false">
+        <shape android:shape = "oval">
+            <solid android:color = "#ffff00"/>
+        </shape>
+    </item>
+    <item android:state_pressed = "true">
+        <shape android:shape = "oval">
+            <solid android:color = "#fff000"/>
+        </shape>
+    </item>
+</selector>
